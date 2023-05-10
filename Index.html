@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário EBAC</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgb(230, 221, 210);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+      }
+      form {
+        font-family: Arial, Helvetica, sans-serif;    
+      }
+      form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      form input, form textarea, button {
+        
+       padding: 5px;
+       border: 1px solid;
+       border-radius: 10px;
+      }
+      form input:focus, form textarea:focus {
+        background-color: rgb(230, 221, 210);
+      }
+      form button{
+        cursor: pointer;
+      }
+      form label {
+        margin-left: 7px;
+      }
+    </style>
+  
+  <body>
+    <header>
+      <h1>Formulário EBAC</h1>
+    </header>
+      <section>
+        <form>
+          <div>
+            <label for="Nome"> Nome:</label>
+          <input id="Nome" placeholder="Nome completo" type="text" /> <br />
+          <br />
+          </div>
+          <div>
+            <label for="Email"> E-mail:</label>
+          <input id="Email" type="email" placeholder="E-mail" /> <br />
+          <br />
+          </div>
+          <div>
+            <label for="Senha">Senha:</label>
+          <input id="Senha" placeholder="Senha" type="password" /> <br />
+          <br />
+          </div>
+          <div>
+            <label for="Text">Escreva uma mensagem</label>
+          <textarea id="Text" cols="40" rows="10"></textarea>
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+             
+        </form>
+      </section>
+      
+  </body>
+</html>
